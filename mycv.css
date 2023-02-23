@@ -1,15 +1,16 @@
 body{
     background-color: white;
-    margin:80px;
+    margin:60px;
     margin-top:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container{
     margin-left: 50px;
     margin-right: 50px;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 *{
@@ -26,7 +27,6 @@ body{
     float:left;
     width:50%;
     padding:10px;
-    height:300px;
 }
 
 h1{
@@ -59,4 +59,11 @@ a{
 
 .edukasi li{
     margin:5px;
+}
+
+
+
+.skill li{
+    margin:5px;
+    margin-left: 0px;
 }
