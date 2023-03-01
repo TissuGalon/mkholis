@@ -17,8 +17,21 @@
 
 
   </head>
-  <body style="background-color: white; margin-right: 50px; margin-left: 50px;">
 
+  <body id="body" style="background-color: white; margin-right: 50px; margin-left: 50px;">
+
+    <script>
+      let ukuran = window.innerWidth;
+      if(ukuran > "768"){
+        document.getElementById('body').style.marginLeft = '50px';
+        document.getElementById('body').style.marginRight = '50px';
+      }else{
+        document.getElementById('body').style.marginLeft = '0px';
+        document.getElementById('body').style.marginRight = '0px';
+        document.getElementsById('wrapper').style.marginLeft = '0px';
+        document.getElementsById('wrapper').style.marginRight = '0px';
+      }
+    </script>
     
     <div>
       <div class="hero" style="padding-bottom:10px; background-image: url('img/bg.webp'); background-size:cover; border-radius:9px;">
@@ -35,7 +48,7 @@
       <div style="background-color: #efefef;">
         
         <br>
-          <div class="wrapper">
+          <div class="wrapper" id="wrapper">
             <div class="installation">
               <h3 class="section__title"><i class="fa-solid fa-user me-3"></i> Personal Info</h3>
               <div class="tab__container" style="/* From https://css.glass */
